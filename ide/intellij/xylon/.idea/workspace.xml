@@ -101,7 +101,7 @@
       <file leaf-file-name="xec.sh" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../src/main/bash/xec.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="7" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.42161018">
+            <state line="38" column="1" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.19915254">
               <folding />
             </state>
           </provider>
@@ -794,7 +794,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Full project working and opening intellij" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed warning in xec.sh" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -812,6 +812,7 @@
     <MESSAGE value="Added bash support to intellij. cooking with gas." />
     <MESSAGE value="Got basic initailisation working" />
     <MESSAGE value="Full project working and opening intellij" />
+    <MESSAGE value="Fixed warning in xec.sh" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -907,7 +908,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../src/main/bash/xec.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="7" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.42161018">
+        <state line="38" column="1" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.19915254">
           <folding />
         </state>
       </provider>

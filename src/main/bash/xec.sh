@@ -36,7 +36,7 @@ echo "--------------------------------------------------------------------------
 
 echo "Initialising java-basic project in $CURRENT_DIR"
 
-rm -r *
+#rm -r *
 cp -r $XEC_HOME/../project-templates/java-basic/* $CURRENT_DIR
 
 mv "./ide/intellij/\${project.name}" ./ide/intellij/$PROJECT_NAME
