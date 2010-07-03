@@ -3,7 +3,7 @@
 # add this to your ~/.bash_profile to make it simpler to call:
 # export PATH=.:$PATH
 
-PWD=$(pwd)
+CURRENT_DIR=$(pwd)
 PROJECT_NAME=$(basename "$PWD")
 ANT_PATH=$(which ant)
 
@@ -36,8 +36,8 @@ echo "--------------------------------------------------------------------------
 echo "Doing something here ..."
 
 #type man strftime to see full list of date formatting options.
-CURRENT_DATE=`date "+%a %d %b %Y"`
-CURRENT_TIME=`date "+%H:%M:%S"`
+CURRENT_DATE=$(date "+%a %d %b %Y")
+CURRENT_TIME=$(date "+%H:%M:%S")
 echo -----------------------------------------------------------------------------
 echo Build Complete at $CURRENT_TIME on $CURRENT_TIME.
 echo -----------------------------------------------------------------------------
