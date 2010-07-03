@@ -14,6 +14,7 @@ function calculate.xecScriptFileName() {
     if [ -z "$LINKED_XEC_SCRIPT_FILE" ]; then
         XEC_SCRIPT_FILE=$RAW_XEC_SCRIPT_FILE
     fi
+    XEC_HOME=$(dirname $XEC_SCRIPT_FILE)    
 }
 
 function init() {
@@ -24,8 +25,8 @@ init
 
 echo "-----------------------------------------------------------------------------"
 echo "Project name   : [$PROJECT_NAME]"
-echo "Working in     : $PWD"
-echo "xec home       : $(dirname $XEC_SCRIPT_FILE)"
+echo "Working in     : $CURRENT_DIR"
+echo "xec home       : $XEC_HOME"
 echo "xec version    : 1.0"
 echo "Commands       : $@"
 echo "-----------------------------------------------------------------------------"
@@ -33,7 +34,8 @@ echo "--------------------------------------------------------------------------
 
 #ant -f ./build.xml -Dbasedir=$PWD -Dproject.name=$PROJECT_NAME $@
 
-echo "Doing something here ..."
+echo "Initialising java-basic project in $CURRENT_DIR"
+cp -r $XEC_HOME/../project-templates/java-basic/* $CURRENT_DIR
 
 #type man strftime to see full list of date formatting options.
 CURRENT_DATE=$(date "+%a %d %b %Y")
