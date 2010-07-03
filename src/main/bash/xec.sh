@@ -39,10 +39,16 @@ echo "Initialising java-basic project in $CURRENT_DIR"
 rm -r *
 cp -r $XEC_HOME/../project-templates/java-basic/* $CURRENT_DIR
 
-mv "./ide/intellij/\${project.name}" "./ide/intellij/$PROJECT_NAME"
-mv "./ide/intellij/\${project.name}.iml" "./ide/intellij/$PROJECT_NAME/$PROJECT_NAME.iml"
+mv ./ide/intellij/\${project.name} ./ide/intellij/$PROJECT_NAME
+mv ./ide/intellij/$PROJECT_NAME/\${project.name}.iml ./ide/intellij/$PROJECT_NAME/$PROJECT_NAME.iml
 
-eval sed -i .bak "'s/\\\$project\.name\\\$/$PROJECT_NAME/g'" ./ide/intellij/$PROJECT_NAME/.idea/modules.xml
+eval sed -i .bak "'s/\\\$project\.name\\\$/$PROJECT_NAME/g'" "./ide/intellij/$PROJECT_NAME/.idea/modules.xml"
+
+rm "./ide/intellij/$PROJECT_NAME/.idea/modules.xml.bak" 
+
+open -a /Applications/IntelliJ\ IDEA\ 9.0.1.app/ ide/intellij/$PROJECT_NAME
+
+
 
 #type man strftime to see full list of date formatting options.
 CURRENT_DATE=$(date "+%a %d %b %Y")
