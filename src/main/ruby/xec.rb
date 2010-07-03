@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-def sayHello jim
-  puts jim
+def say_hello jim
+  puts jim  
 end
 
-sayHello "Jim"
+say_hello "Jim"
