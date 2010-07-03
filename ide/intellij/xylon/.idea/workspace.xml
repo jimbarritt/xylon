@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="c3c137ee-a92a-4e84-9eb2-c5bf936adcb0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/.idea/misc.xml" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/src/main/java/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" afterPath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}.iml" afterPath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/${project.name}.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xylon.iml" afterPath="$PROJECT_DIR$/xylon.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/.idea/dictionaries/jim.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/.idea/vcs.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$USER_HOME_GRAILS$/" />
@@ -107,7 +101,7 @@
       <file leaf-file-name="xec.sh" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../src/main/bash/xec.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="31" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.33262712">
+            <state line="43" column="7" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.42161018">
               <folding />
             </state>
           </provider>
@@ -913,7 +907,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../src/main/bash/xec.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="31" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.33262712">
+        <state line="43" column="7" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.42161018">
           <folding />
         </state>
       </provider>
