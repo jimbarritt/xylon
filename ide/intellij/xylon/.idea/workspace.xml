@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="c3c137ee-a92a-4e84-9eb2-c5bf936adcb0" name="Default" comment="Got it all working">
+    <list default="true" readonly="true" id="c3c137ee-a92a-4e84-9eb2-c5bf936adcb0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xylon.iml" afterPath="$PROJECT_DIR$/xylon.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/ruby/xec.rb" afterPath="$PROJECT_DIR$/../../../src/main/ruby/xec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$USER_HOME_GRAILS$/" />
