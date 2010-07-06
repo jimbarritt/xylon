@@ -2,7 +2,13 @@
   <profile version="1.0" is_locked="false">
     <option name="myName" value="Project Default" />
     <option name="myLocal" value="false" />
+    <inspection_tool class="Add Shebang line" enabled="false" level="INFO" enabled_by_default="false" />
+    <inspection_tool class="Change to a readonly shell variable" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Duplicate function" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="EmptyWebServiceClass" level="WARNING" enabled="false" />
+    <inspection_tool class="Evaluate arithmetic expression" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Evaluate expansion" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Fix shebang" enabled="false" level="WARNING" enabled_by_default="false">/bin/sh#/bin/bash</inspection_tool>
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
@@ -19,6 +25,7 @@
       <option name="myCustomValuesEnabled" value="true" />
     </inspection_tool>
     <inspection_tool class="ImplicitlyExposedWebServiceMethods" level="INFO" enabled="false" />
+    <inspection_tool class="Integer division with remainder found." enabled="false" level="INFO" enabled_by_default="false" />
     <inspection_tool class="JavaDoc" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="TOP_LEVEL_CLASS_OPTIONS">
         <value>
@@ -53,8 +60,16 @@
       <option name="REPORT_VARIABLES" value="false" />
       <option name="REPORT_PARAMETERS" value="false" />
     </inspection_tool>
+    <inspection_tool class="Missing include file" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="NonJaxWsWebServices" level="WARNING" enabled="false" />
     <inspection_tool class="OneWayWebMethod" level="ERROR" enabled="false" />
+    <inspection_tool class="Readonly variable" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="Recursive file inclusion" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Replace with subshell" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Unknown filedescriptor" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Unregister global variable" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="Unresolved variable" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="ValidExternallyBoundObject" level="ERROR" enabled="false" />
+    <inspection_tool class="Wrap function body" enabled="false" level="INFO" enabled_by_default="false" />
   </profile>
 </component>

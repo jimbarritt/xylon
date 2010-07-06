@@ -75,8 +75,7 @@ function processCommand() {
 		command.help
 		exit -1
 	fi
-	#	declare -f $COMMAND_FUNCTION
-#	eval $COMMAND_FUNCTION $ARGUMENTS
+	eval $COMMAND_FUNCTION $ARGUMENTS
 }
 
 function command.help() {

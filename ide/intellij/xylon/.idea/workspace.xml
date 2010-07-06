@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="c3c137ee-a92a-4e84-9eb2-c5bf936adcb0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/src/main/resource/logging/log4j.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jim.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jim.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" afterPath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../src/main/bash/gen-moose.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$USER_HOME_GRIFFON$/" />
@@ -103,7 +103,7 @@
       <file leaf-file-name="xec.sh" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../src/main/bash/xec.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="83" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.33262712">
+            <state line="77" column="0" selection-start="2492" selection-end="2492" vertical-scroll-proportion="0.6673729">
               <folding />
             </state>
           </provider>
@@ -148,7 +148,21 @@
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
-      <profile-state />
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id>Inspections</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Bash</id>
+          </State>
+        </selected-state>
+      </profile-state>
     </entry>
   </component>
   <component name="ProjectLevelVcsManager">
@@ -464,7 +478,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
+    <property name="options.lastSelected" value="Errors" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -890,7 +904,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../src/main/bash/xec.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="83" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.33262712">
+        <state line="77" column="0" selection-start="2492" selection-end="2492" vertical-scroll-proportion="0.6673729">
           <folding />
         </state>
       </provider>

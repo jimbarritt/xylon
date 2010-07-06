@@ -2,7 +2,11 @@
   <dictionary name="jim">
     <words>
       <w>chmod</w>
+      <w>command.help</w>
       <w>dbasedir</w>
+      <w>eval</w>
+      <w>report.completed</w>
+      <w>report.config</w>
       <w>strftime</w>
     </words>
   </dictionary>
