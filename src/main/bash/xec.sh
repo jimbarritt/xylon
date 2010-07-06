@@ -21,39 +21,73 @@ function init() {
     calculate.xecScriptFileName
 }
 
+function report.config() {
+	echo "-----------------------------------------------------------------------------"
+	echo "XEC"
+	echo "Project name   : [$PROJECT_NAME]"
+	echo "Working in     : $CURRENT_DIR"
+	echo "xec home       : $XEC_HOME"
+	echo "xec version    : 1.0"
+	echo "Args           : $*"
+	echo "-----------------------------------------------------------------------------"
+	#echo Using ant from [$ANT_PATH] in directory [$PWD] with command [$1]
+
+	#ant -f ./build.xml -Dbasedir=$PWD -Dproject.name=$PROJECT_NAME $@	
+}
+
+function command.initProject() {
+	echo "Initialising java-basic project in $CURRENT_DIR"
+
+	#rm -r *
+	cp -r $XEC_HOME/../project-templates/java-basic/* $CURRENT_DIR
+
+	mv "./ide/intellij/\${project.name}" ./ide/intellij/$PROJECT_NAME
+	mv "./ide/intellij/$PROJECT_NAME/\${project.name}.iml" ./ide/intellij/$PROJECT_NAME/$PROJECT_NAME.iml
+
+	eval sed -i .bak "'s/\\\$project\.name\\\$/$PROJECT_NAME/g'" "./ide/intellij/$PROJECT_NAME/.idea/modules.xml"
+
+	rm "./ide/intellij/$PROJECT_NAME/.idea/modules.xml.bak" 
+
+	open -a /Applications/IntelliJ\ IDEA\ 9.0.1.app/ ide/intellij/$PROJECT_NAME	
+}
+
+function report.completed() {
+	#type man strftime to see full list of date formatting options.
+	CURRENT_DATE=$(date "+%a %d %b %Y")
+	CURRENT_TIME=$(date "+%H:%M:%S")
+	echo -----------------------------------------------------------------------------
+	echo XEC Complete at $CURRENT_TIME on $CURRENT_DATE.
+	echo -----------------------------------------------------------------------------
+	echo
+} 
+
+function processCommand() {
+	local COMMAND=$1
+	shift
+	local ARGUMENTS=$*
+
+	echo "Executing command [$COMMAND] with arguments [$ARGUMENTS]"
+	
+	COMMAND_FUNCTION="command.$COMMAND"
+	FUNCTION_EXISTS=$(type "$COMMAND_FUNCTION" 2> /dev/null | grep "is a function")
+	if [ -z "$FUNCTION_EXISTS" ] ; then
+		echo "Unknown command [$COMMAND]"
+		command.help
+		exit -1
+	fi
+	#	declare -f $COMMAND_FUNCTION
+#	eval $COMMAND_FUNCTION $ARGUMENTS
+}
+
+function command.help() {
+	echo "Usage: xec <command> args"
+}
+
+
 init
-
-echo "-----------------------------------------------------------------------------"
-echo "Project name   : [$PROJECT_NAME]"
-echo "Working in     : $CURRENT_DIR"
-echo "xec home       : $XEC_HOME"
-echo "xec version    : 1.0"
-echo "Commands       : $@"
-echo "-----------------------------------------------------------------------------"
-#echo Using ant from [$ANT_PATH] in directory [$PWD] with command [$1]
-
-#ant -f ./build.xml -Dbasedir=$PWD -Dproject.name=$PROJECT_NAME $@
-
-echo "Initialising java-basic project in $CURRENT_DIR"
-
-#rm -r *
-cp -r $XEC_HOME/../project-templates/java-basic/* $CURRENT_DIR
-
-mv "./ide/intellij/\${project.name}" ./ide/intellij/$PROJECT_NAME
-mv "./ide/intellij/$PROJECT_NAME/\${project.name}.iml" ./ide/intellij/$PROJECT_NAME/$PROJECT_NAME.iml
-
-eval sed -i .bak "'s/\\\$project\.name\\\$/$PROJECT_NAME/g'" "./ide/intellij/$PROJECT_NAME/.idea/modules.xml"
-
-rm "./ide/intellij/$PROJECT_NAME/.idea/modules.xml.bak" 
-
-open -a /Applications/IntelliJ\ IDEA\ 9.0.1.app/ ide/intellij/$PROJECT_NAME
+report.config $*
+processCommand $*
+report.completed
 
 
 
-#type man strftime to see full list of date formatting options.
-CURRENT_DATE=$(date "+%a %d %b %Y")
-CURRENT_TIME=$(date "+%H:%M:%S")
-echo -----------------------------------------------------------------------------
-echo Build Complete at $CURRENT_TIME on $CURRENT_TIME.
-echo -----------------------------------------------------------------------------
-echo
