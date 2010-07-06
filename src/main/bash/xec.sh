@@ -35,8 +35,32 @@ function report.config() {
 	#ant -f ./build.xml -Dbasedir=$PWD -Dproject.name=$PROJECT_NAME $@	
 }
 
-function command.initProject() {
-	echo "Initialising java-basic project in $CURRENT_DIR"
+function report.completed() {
+	#type man strftime to see full list of date formatting options.
+	CURRENT_DATE=$(date "+%a %d %b %Y")
+	CURRENT_TIME=$(date "+%H:%M:%S")
+	echo -----------------------------------------------------------------------------
+	echo XEC Complete at $CURRENT_TIME on $CURRENT_DATE.
+	echo -----------------------------------------------------------------------------
+	echo
+}
+
+function command.help() {
+	echo "Usage: xec <command> args"
+}
+
+function command.gen() {    
+    local GEN_COMMAND=$1
+    shift
+    local ARGUMENTS=$*
+
+    executeCommandFunction "gen $GEN_COMMAND" "gen.$GEN_COMMAND" $ARGUMENTS    
+}
+
+function gen.java() {
+    echo "Generating a java project ..."
+
+    echo "Initialising java-basic project in $CURRENT_DIR"
 
 	#rm -r *
 	cp -r $XEC_HOME/../project-templates/java-basic/* $CURRENT_DIR
@@ -46,29 +70,21 @@ function command.initProject() {
 
 	eval sed -i .bak "'s/\\\$project\.name\\\$/$PROJECT_NAME/g'" "./ide/intellij/$PROJECT_NAME/.idea/modules.xml"
 
-	rm "./ide/intellij/$PROJECT_NAME/.idea/modules.xml.bak" 
+	rm "./ide/intellij/$PROJECT_NAME/.idea/modules.xml.bak"
 
 	open -a /Applications/IntelliJ\ IDEA\ 9.0.1.app/ ide/intellij/$PROJECT_NAME	
 }
 
-function report.completed() {
-	#type man strftime to see full list of date formatting options.
-	CURRENT_DATE=$(date "+%a %d %b %Y")
-	CURRENT_TIME=$(date "+%H:%M:%S")
-	echo -----------------------------------------------------------------------------
-	echo XEC Complete at $CURRENT_TIME on $CURRENT_DATE.
-	echo -----------------------------------------------------------------------------
-	echo
-} 
+function gen.moose() {
+    ./gen-moose.sh
+}
 
-function processCommand() {
-	local COMMAND=$1
-	shift
-	local ARGUMENTS=$*
-
-	echo "Executing command [$COMMAND] with arguments [$ARGUMENTS]"
-	
-	COMMAND_FUNCTION="command.$COMMAND"
+function executeCommandFunction() {
+    local COMMAND=$1
+    local COMMAND_FUNCTION=$2
+    shift
+    shift
+    local ARGUMENTS=$*
 	FUNCTION_EXISTS=$(type "$COMMAND_FUNCTION" 2> /dev/null | grep "is a function")
 	if [ -z "$FUNCTION_EXISTS" ] ; then
 		echo "Unknown command [$COMMAND]"
@@ -78,8 +94,14 @@ function processCommand() {
 	eval $COMMAND_FUNCTION $ARGUMENTS
 }
 
-function command.help() {
-	echo "Usage: xec <command> args"
+function processCommand() {
+	local COMMAND=$1
+	shift
+	local ARGUMENTS=$*
+
+	echo "Executing command [$COMMAND] with arguments [$ARGUMENTS]"
+
+	executeCommandFunction $COMMAND "command.$COMMAND" $ARGUMENTS
 }
 
 
