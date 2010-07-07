@@ -76,7 +76,7 @@ function gen.java() {
 }
 
 function gen.moose() {
-    ./gen-moose.sh
+    $XEC_HOME/gen-moose.sh
 }
 
 function executeCommandFunction() {
