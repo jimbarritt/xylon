@@ -79,6 +79,10 @@ function gen.moose() {
     $XEC_HOME/gen-moose.sh
 }
 
+function command.build() {
+   ant -logger org.apache.tools.ant.NoBannerLogger -f build.xml
+}
+
 function executeCommandFunction() {
     local COMMAND=$1
     local COMMAND_FUNCTION=$2
