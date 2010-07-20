@@ -79,9 +79,15 @@ function gen.moose() {
     $XEC_HOME/gen-moose.sh
 }
 
+function gen.simian() {
+    $XEC_HOME/gen-simian.sh $XEC_HOME/../../../lib/production   
+}
+
 function command.build() {
    ant -logger org.apache.tools.ant.NoBannerLogger -f build.xml
 }
+
+
 
 function executeCommandFunction() {
     local COMMAND=$1
