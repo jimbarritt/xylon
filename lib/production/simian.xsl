@@ -82,7 +82,12 @@
           <tr>
             <xsl:call-template name="alternated-row"/>
             <td>
-              <xsl:value-of select="@sourceFile"/>
+                 <a>
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="@sourceFile"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="@sourceFile" />                     
+                 </a>
             </td>
             <td>
               <xsl:value-of select="@startLineNumber"/> -

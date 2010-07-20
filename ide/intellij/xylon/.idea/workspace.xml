@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="c3c137ee-a92a-4e84-9eb2-c5bf936adcb0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../lib/production/simian.xsl" afterPath="$PROJECT_DIR$/../../../lib/production/simian.xsl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh" afterPath="$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$USER_HOME_GRIFFON$/" />
@@ -102,7 +101,7 @@
       <file leaf-file-name="simian.xsl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../lib/production/simian.xsl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="17" selection-start="3362" selection-end="3362" vertical-scroll-proportion="0.9058296">
+            <state line="86" column="24" selection-start="3068" selection-end="3068" vertical-scroll-proportion="0.4349776">
               <folding />
             </state>
           </provider>
@@ -878,7 +877,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added simian command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added simian xslt processing for html report" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -904,6 +903,7 @@
     <MESSAGE value="Changed it to make famix 21 file" />
     <MESSAGE value="Added command to run the build" />
     <MESSAGE value="Added simian command" />
+    <MESSAGE value="Added simian xslt processing for html report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -996,7 +996,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../lib/production/simian.xsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="17" selection-start="3362" selection-end="3362" vertical-scroll-proportion="0.9058296">
+        <state line="86" column="24" selection-start="3068" selection-end="3068" vertical-scroll-proportion="0.4349776">
           <folding />
         </state>
       </provider>
