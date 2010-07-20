@@ -90,6 +90,13 @@
             </td>
           </tr>
         </xsl:for-each>
+        <tr>
+            <td>
+            <pre>
+                <xsl:value-of select="text" />
+            </pre>
+            </td>
+        </tr>
       </table>
     </div>
   </xsl:template>

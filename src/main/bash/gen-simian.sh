@@ -18,3 +18,5 @@ echo "Transforming report to $TARGET_DIR/simian.html"
 
 XALAN_CLASSPATH=$SIMIAN_HOME/xalan.jar:$SIMIAN_HOME/serializer.jar:$SIMIAN_HOME/xercesimpl.jar:$SIMIAN_HOME/xml-apis.jar:xsltc.jar
 java -cp $XALAN_CLASSPATH org.apache.xalan.xslt.Process -IN $TARGET_DIR/simian.xml -XSL $SIMIAN_HOME/simian.xsl -OUT $TARGET_DIR/simian.html
+
+open target/simian/simian.html

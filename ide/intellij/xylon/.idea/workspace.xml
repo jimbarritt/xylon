@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="c3c137ee-a92a-4e84-9eb2-c5bf936adcb0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../lib/production/xercesImpl.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../lib/production/simian.xsl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../lib/production/xsltc.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../lib/production/serializer.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" afterPath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../lib/production/xalan.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../lib/production/xml-apis.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../lib/production/simian-2.2.24.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../lib/production/simian.xsl" afterPath="$PROJECT_DIR$/../../../lib/production/simian.xsl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh" afterPath="$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh" />
     </list>
     <ignored path="$USER_HOME_GRIFFON$/" />
     <ignored path="$USER_HOME_GRAILS$/" />
@@ -79,15 +72,6 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="${project.name}.iml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/${project.name}.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="87" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="xylon.iml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xylon.iml">
           <provider selected="true" editor-type-id="text-editor">
@@ -106,10 +90,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gen-simian.sh" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gen-simian.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="38" selection-start="405" selection-end="405" vertical-scroll-proportion="0.8008475">
+            <state line="21" column="30" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simian.xsl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../../lib/production/simian.xsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="97" column="17" selection-start="3362" selection-end="3362" vertical-scroll-proportion="0.9058296">
               <folding />
             </state>
           </provider>
@@ -156,6 +149,7 @@
         <option value="$PROJECT_DIR$/../../../src/main/bash/gen-moose.sh" />
         <option value="$PROJECT_DIR$/../../../src/main/bash/xec.sh" />
         <option value="$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh" />
+        <option value="$PROJECT_DIR$/../../../lib/production/simian.xsl" />
       </list>
     </option>
   </component>
@@ -838,10 +832,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32948717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32948717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -859,7 +853,7 @@
       <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33932424" sideWeight="0.6615385" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22286125" sideWeight="0.6615385" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Cycles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -884,7 +878,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added command to run the build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added simian command" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -909,6 +903,7 @@
     <MESSAGE value="Added a moose generation script" />
     <MESSAGE value="Changed it to make famix 21 file" />
     <MESSAGE value="Added command to run the build" />
+    <MESSAGE value="Added simian command" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -994,7 +989,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="38" selection-start="405" selection-end="405" vertical-scroll-proportion="0.8008475">
+        <state line="21" column="30" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../lib/production/simian.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="17" selection-start="3362" selection-end="3362" vertical-scroll-proportion="0.9058296">
           <folding />
         </state>
       </provider>
