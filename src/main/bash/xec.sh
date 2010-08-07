@@ -57,7 +57,16 @@ function command.gen() {
     executeCommandFunction "gen $GEN_COMMAND" "gen.$GEN_COMMAND" $ARGUMENTS    
 }
 
-function gen.java() {
+function command.init() {    
+    local GEN_COMMAND=$1
+    shift
+    local ARGUMENTS=$*
+
+    executeCommandFunction "init $GEN_COMMAND" "init.$GEN_COMMAND" $ARGUMENTS    
+}
+
+
+function init.java() {
     echo "Generating a java project ..."
 
     echo "Initialising java-basic project in $CURRENT_DIR"
@@ -72,7 +81,7 @@ function gen.java() {
 
 	rm "./ide/intellij/$PROJECT_NAME/.idea/modules.xml.bak"
 
-	open -a /Applications/IntelliJ\ IDEA\ 9.0.1.app/ ide/intellij/$PROJECT_NAME	
+	open -a /Applications/IntelliJ\ IDEA\ 9.0.3.app/ ide/intellij/$PROJECT_NAME	
 }
 
 function gen.moose() {
