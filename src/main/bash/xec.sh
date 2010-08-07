@@ -76,12 +76,13 @@ function init.java() {
 
 	mv "./ide/intellij/\${project.name}" ./ide/intellij/$PROJECT_NAME
 	mv "./ide/intellij/$PROJECT_NAME/\${project.name}.iml" ./ide/intellij/$PROJECT_NAME/$PROJECT_NAME.iml
+	mv "./ide/intellij/$PROJECT_NAME/\${project.name}.ipr" ./ide/intellij/$PROJECT_NAME/$PROJECT_NAME.ipr
 
-	eval sed -i .bak "'s/\\\$project\.name\\\$/$PROJECT_NAME/g'" "./ide/intellij/$PROJECT_NAME/.idea/modules.xml"
+	eval sed -i .bak "'s/\\\$project\.name\\\$/$PROJECT_NAME/g'" "./ide/intellij/$PROJECT_NAME/$PROJECT_NAME.ipr"
 
-	rm "./ide/intellij/$PROJECT_NAME/.idea/modules.xml.bak"
+	rm "./ide/intellij/$PROJECT_NAME/$PROJECT_NAME.ipr.bak"
 
-	open -a /Applications/IntelliJ\ IDEA\ 9.0.3.app/ ide/intellij/$PROJECT_NAME	
+	open -a /Applications/IntelliJ\ IDEA\ 9.0.3.app/ ide/intellij/$PROJECT_NAME/$PROJECT_NAME.ipr	
 }
 
 function gen.moose() {

@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="c3c137ee-a92a-4e84-9eb2-c5bf936adcb0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/.idea/ant.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/.idea/modules.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" afterPath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/${project.name}.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/.idea/encodings.xml" afterPath="" />
     </list>
     <ignored path="$USER_HOME_GRIFFON$/" />
     <ignored path="$USER_HOME_GRAILS$/" />
@@ -78,28 +72,28 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="xylon.iml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xylon.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="xec.sh" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../src/main/bash/xec.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="47" selection-start="2536" selection-end="2536" vertical-scroll-proportion="0.08898305">
+            <state line="85" column="17" selection-start="2692" selection-end="2692" vertical-scroll-proportion="0.6673729">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gen-simian.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh">
+      <file leaf-file-name="${project.name}.ipr" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/${project.name}.ipr">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="30" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+            <state line="271" column="102" selection-start="15560" selection-end="15560" vertical-scroll-proportion="-5.6923075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="${project.name}.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/${project.name}.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="87" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,6 +150,7 @@
         <option value="$PROJECT_DIR$/../../../src/main/bash/gen-moose.sh" />
         <option value="$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh" />
         <option value="$PROJECT_DIR$/../../../lib/production/simian.xsl" />
+        <option value="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/${project.name}.ipr" />
         <option value="$PROJECT_DIR$/../../../src/main/bash/xec.sh" />
       </list>
     </option>
@@ -950,7 +945,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Committing workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replacing .idea dir with a single file" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -979,6 +974,7 @@
     <MESSAGE value="Added simian xslt processing for html report" />
     <MESSAGE value="Added links to the files" />
     <MESSAGE value="Committing workspace" />
+    <MESSAGE value="Replacing .idea dir with a single file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -996,11 +992,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/${project.name}.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="87" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xylon.iml">
@@ -1030,9 +1021,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/${project.name}.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="87" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/${project.name}.ipr">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="271" column="102" selection-start="15560" selection-end="15560" vertical-scroll-proportion="-5.6923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../../src/main/bash/xec.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="47" selection-start="2536" selection-end="2536" vertical-scroll-proportion="0.08898305">
+        <state line="85" column="17" selection-start="2692" selection-end="2692" vertical-scroll-proportion="0.6673729">
           <folding />
         </state>
       </provider>
