@@ -1,11 +1,7 @@
 #!/bin/sh
-
-
-
+SIMIAN_HOME=$1
 SOURCE_DIR=$PWD/src/main/java
 TARGET_DIR=$PWD/target/simian
-
-SIMIAN_HOME=$1
 
 echo "Generating simian duplication report to $TARGET_DIR"
 

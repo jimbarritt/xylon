@@ -93,6 +93,10 @@ function gen.simian() {
     $XEC_HOME/gen-simian.sh $XEC_HOME/../../../lib/production   
 }
 
+function gen.treemap() {
+    $XEC_HOME/gen-treemap.sh $PROJECT_NAME   $XEC_HOME/../../../tool/checkstyle
+}
+
 function command.build() {
    ant -logger org.apache.tools.ant.NoBannerLogger -f build.xml
 }

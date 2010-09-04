@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="checkstyle" default="report:checkstyle-metrics">
+
+    <path id="checkstyle.classpath">
+        <fileset dir="${checkstyle.dir}" includes="lib/*.jar"/>
+    </path>
+
+    <taskdef resource="checkstyletask.properties"
+             classpathref="checkstyle.classpath"/>
+
+    <target name="report:checkstyle-metrics">
+        <echo message="Executing checkstyle from ${checkstyle.dir}" />
+        <mkdir dir="${target.reports.checkstyle.dir}" />
+        <checkstyle config="${checkstyle.dir}/ant/checkstyle-metrics.xml">
+            <fileset dir="${src.main.java.dir}" includes="**/*.java"/>
+            <formatter type="xml" toFile="${target.reports.checkstyle.dir}/checkstyle-metrics-src.xml"/>
+        </checkstyle>
+        <checkstyle config="${checkstyle.dir}/ant/checkstyle-metrics.xml">
+            <fileset dir="${src.test.java.dir}" includes="**/*.java"/>
+            <formatter type="xml" toFile="${target.reports.checkstyle.dir}/checkstyle-metrics-unit-test.xml"/>
+        </checkstyle>
+
+        <xslt in="${target.reports.checkstyle.dir}/checkstyle-metrics-src.xml"
+               out="${target.reports.checkstyle.dir}/checkstyle-metrics-src.html"
+               style="${checkstyle.dir}/checkstyle-metrics.xsl"/>
+
+        <xslt in="${target.reports.checkstyle.dir}/checkstyle-metrics-unit-test.xml"
+                       out="${target.reports.checkstyle.dir}/checkstyle-metrics-unit-test.html"
+                       style="${checkstyle.dir}/checkstyle-metrics.xsl"/>
+
+        
+        <exec executable="/usr/bin/ruby" output="${target.reports.checkstyle.dir}/complexity-treemap.tm3" >
+            <arg value="${checkstyle.dir}/checkstyle2tm3.rb" />
+            <arg value="${target.reports.checkstyle.dir}/checkstyle-metrics-src.xml" />
+            <arg value="${src.main.java.dir}" />            
+        </exec>
+
+        <exec executable="/usr/bin/ruby" output="${target.reports.checkstyle.dir}/complexity-treemap-unit-test.tm3" >
+            <arg value="${checkstyle.dir}/checkstyle2tm3.rb" />
+            <arg value="${target.reports.checkstyle.dir}/checkstyle-metrics-unit-test.xml" />
+            <arg value="${src.test.java.dir}" />
+        </exec>
+    </target>
+
+
+</project>
