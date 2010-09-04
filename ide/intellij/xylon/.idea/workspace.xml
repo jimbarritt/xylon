@@ -2,53 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="c3c137ee-a92a-4e84-9eb2-c5bf936adcb0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/junit.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/log4j.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/bash/gen-moose.sh" afterPath="$PROJECT_DIR$/../../../src/main/bash/gen-moose.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/jung-samples-2.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/stax-api-1.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/colt.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/jung-graph-impl-2.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/checkstyle/lib/checkstyle-all-5.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/antlr.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/xercesImpl.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" afterPath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/checkstyle/ant/checkstyle-metrics.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh" afterPath="$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/JFontChooser.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../src/main/bash/gen-treemap.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/xml-writer.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/png.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/checkstyle/ant/checkstyle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/checkstyle/checkstyle2tm3.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/colt-1.2.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/concurrent.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/jung-jai-2.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/wstx-asl-3.2.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/vecmath-1.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/ant.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/checkstyle/checkstyle-metrics.xsl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/concurrent-1.3.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projectFilesBackup/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/collections-generic-4.01.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/j3d-core-1.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/ant-launcher.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/commons-compress-1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/commons-compress-1.1-sources.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/jung-io-2.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/infovis-toolkit-trunk.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/infovis-toolkit-trunk-src.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/xmlenc-0.52.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/jung-visualization-2.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/jung-api-2.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/opencsv-2.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/xstream-1.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/jung-jai-samples-2.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/jung-3d-2.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/xml-apis.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/jung-algorithms-2.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/infovis-toolkit/lib/jung-3d-demos-2.0.1.jar" />
     </list>
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
@@ -145,19 +99,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkstyle2tm3.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="checkstyle2tm3.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../tool/checkstyle/checkstyle2tm3.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="26" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
+            <state line="56" column="26" selection-start="1296" selection-end="1296" vertical-scroll-proportion="1.8110883">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkstyle.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="checkstyle.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../tool/checkstyle/ant/checkstyle.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="24" selection-start="1903" selection-end="1903" vertical-scroll-proportion="0.7330508">
+            <state line="38" column="24" selection-start="1903" selection-end="1903" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -856,7 +810,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating to use .ipr format as its more stable. Also works better with later versions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding treemap and infovis" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -887,6 +841,7 @@
     <MESSAGE value="Committing workspace" />
     <MESSAGE value="Replacing .idea dir with a single file" />
     <MESSAGE value="Updating to use .ipr format as its more stable. Also works better with later versions" />
+    <MESSAGE value="Adding treemap and infovis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -961,13 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../tool/checkstyle/checkstyle2tm3.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="26" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../src/main/bash/gen-treemap.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="24" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
@@ -977,7 +925,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../tool/checkstyle/ant/checkstyle.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="24" selection-start="1903" selection-end="1903" vertical-scroll-proportion="0.7330508">
+        <state line="38" column="24" selection-start="1903" selection-end="1903" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../tool/checkstyle/checkstyle2tm3.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="26" selection-start="1296" selection-end="1296" vertical-scroll-proportion="1.8110883">
           <folding />
         </state>
       </provider>
