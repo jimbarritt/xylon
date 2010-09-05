@@ -94,7 +94,12 @@ function gen.simian() {
 }
 
 function gen.treemap() {
-    $XEC_HOME/gen-treemap.sh $PROJECT_NAME   $XEC_HOME/../../../tool/checkstyle
+    for SRC_DIR in $(find $CURRENT_DIR/src -name java); do
+        PARENT_DIR=$(dirname $SRC_DIR)
+        PARENT_NAME=$(basename $PARENT_DIR)
+	    echo "Generating treemap for : $PARENT_NAME : $SRC_DIR"
+	    $XEC_HOME/gen-treemap.sh $PROJECT_NAME  $XEC_HOME/../../../tool/checkstyle $SRC_DIR $PARENT_NAME
+    done
 }
 
 function command.build() {

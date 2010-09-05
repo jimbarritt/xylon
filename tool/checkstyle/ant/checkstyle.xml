@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project name="checkstyle" default="report:checkstyle-metrics">
-
+    <property name="outputfile.xml" value="${target.reports.checkstyle.dir}/xml/checkstyle-metrics-${target.reports.checkstyle.outputfile.suffix}.xml" />
+    <property name="outputfile.html" value="${target.reports.checkstyle.dir}/html/checkstyle-metrics-${target.reports.checkstyle.outputfile.suffix}.html" />
+    <property name="outputfile.tm3" value="${target.reports.checkstyle.dir}/complexity-treemap-${target.reports.checkstyle.outputfile.suffix}.tm3" />
     <path id="checkstyle.classpath">
         <fileset dir="${checkstyle.dir}" includes="lib/*.jar"/>
     </path>
@@ -12,35 +14,25 @@
     <target name="report:checkstyle-metrics">
         <echo message="Executing checkstyle from ${checkstyle.dir}" />
         <mkdir dir="${target.reports.checkstyle.dir}" />
-        <checkstyle config="${checkstyle.dir}/ant/checkstyle-metrics.xml">
-            <fileset dir="${src.main.java.dir}" includes="**/*.java"/>
-            <formatter type="xml" toFile="${target.reports.checkstyle.dir}/checkstyle-metrics-src.xml"/>
-        </checkstyle>
-        <checkstyle config="${checkstyle.dir}/ant/checkstyle-metrics.xml">
-            <fileset dir="${src.test.java.dir}" includes="**/*.java"/>
-            <formatter type="xml" toFile="${target.reports.checkstyle.dir}/checkstyle-metrics-unit-test.xml"/>
-        </checkstyle>
-
-        <xslt in="${target.reports.checkstyle.dir}/checkstyle-metrics-src.xml"
-               out="${target.reports.checkstyle.dir}/checkstyle-metrics-src.html"
-               style="${checkstyle.dir}/checkstyle-metrics.xsl"/>
-
-        <xslt in="${target.reports.checkstyle.dir}/checkstyle-metrics-unit-test.xml"
-                       out="${target.reports.checkstyle.dir}/checkstyle-metrics-unit-test.html"
-                       style="${checkstyle.dir}/checkstyle-metrics.xsl"/>
-
+        <mkdir dir="${target.reports.checkstyle.dir}/xml" />
+        <mkdir dir="${target.reports.checkstyle.dir}/html" />
         
-        <exec executable="/usr/bin/ruby" output="${target.reports.checkstyle.dir}/complexity-treemap.tm3" >
+        <checkstyle config="${checkstyle.dir}/ant/checkstyle-metrics.xml">
+            <fileset dir="${src.dir}" includes="**/*.java"/>
+            <formatter type="xml" toFile="${outputfile.xml}"/>
+        </checkstyle>
+
+        <xslt in="${outputfile.xml}"
+              out="${outputfile.html}"
+              style="${checkstyle.dir}/checkstyle-metrics.xsl"/>
+
+
+        <exec executable="/usr/bin/ruby" output="${outputfile.tm3}" >
             <arg value="${checkstyle.dir}/checkstyle2tm3.rb" />
-            <arg value="${target.reports.checkstyle.dir}/checkstyle-metrics-src.xml" />
-            <arg value="${src.main.java.dir}" />            
+            <arg value="${outputfile.xml}" />
+            <arg value="${src.main.java.dir}" />
         </exec>
 
-        <exec executable="/usr/bin/ruby" output="${target.reports.checkstyle.dir}/complexity-treemap-unit-test.tm3" >
-            <arg value="${checkstyle.dir}/checkstyle2tm3.rb" />
-            <arg value="${target.reports.checkstyle.dir}/checkstyle-metrics-unit-test.xml" />
-            <arg value="${src.test.java.dir}" />
-        </exec>
     </target>
 
 

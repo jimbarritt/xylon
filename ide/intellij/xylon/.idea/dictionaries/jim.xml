@@ -4,6 +4,7 @@
       <w>chmod</w>
       <w>command.help</w>
       <w>dbasedir</w>
+      <w>dirname</w>
       <w>eval</w>
       <w>report.completed</w>
       <w>report.config</w>

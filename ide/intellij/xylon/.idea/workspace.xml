@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="c3c137ee-a92a-4e84-9eb2-c5bf936adcb0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jim.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jim.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" afterPath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/bash/gen-treemap.sh" afterPath="$PROJECT_DIR$/../../../src/main/bash/gen-treemap.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../tool/checkstyle/ant/checkstyle.xml" afterPath="$PROJECT_DIR$/../../../tool/checkstyle/ant/checkstyle.xml" />
     </list>
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
@@ -75,7 +79,7 @@
       <file leaf-file-name="xec.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../src/main/bash/xec.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="25" selection-start="2889" selection-end="2889" vertical-scroll-proportion="0.0">
+            <state line="100" column="91" selection-start="3155" selection-end="3155" vertical-scroll-proportion="-8.269231">
               <folding />
             </state>
           </provider>
@@ -93,25 +97,25 @@
       <file leaf-file-name="gen-treemap.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../src/main/bash/gen-treemap.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="24" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
+            <state line="5" column="93" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkstyle2tm3.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="checkstyle2tm3.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../tool/checkstyle/checkstyle2tm3.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="26" selection-start="1296" selection-end="1296" vertical-scroll-proportion="1.8110883">
+            <state line="56" column="26" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkstyle.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="checkstyle.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../tool/checkstyle/ant/checkstyle.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="24" selection-start="1903" selection-end="1903" vertical-scroll-proportion="0.0">
+            <state line="29" column="65" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.9064588">
               <folding />
             </state>
           </provider>
@@ -151,9 +155,9 @@
         <option value="$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/${project.name}.ipr" />
         <option value="$PROJECT_DIR$/../../../src/main/bash/gen-moose.sh" />
         <option value="$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh" />
+        <option value="$PROJECT_DIR$/../../../tool/checkstyle/checkstyle2tm3.rb" />
         <option value="$PROJECT_DIR$/../../../src/main/bash/xec.sh" />
         <option value="$PROJECT_DIR$/../../../src/main/bash/gen-treemap.sh" />
-        <option value="$PROJECT_DIR$/../../../tool/checkstyle/checkstyle2tm3.rb" />
         <option value="$PROJECT_DIR$/../../../tool/checkstyle/ant/checkstyle.xml" />
       </list>
     </option>
@@ -210,22 +214,8 @@
       <sortByType PackagesPane="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Favorites" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xylon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xylon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -406,6 +396,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xylon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xylon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -415,7 +419,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Ruby" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Bash" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -774,7 +778,7 @@
       <window_info id="JSTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Code Graph" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39036664" sideWeight="0.66238767" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Code Graph" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40330696" sideWeight="0.6615385" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32862645" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Fireworks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -785,7 +789,7 @@
       <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32997844" sideWeight="0.6615385" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19194824" sideWeight="0.6615385" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Cycles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -810,7 +814,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding treemap and infovis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Workspace changes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -842,6 +846,7 @@
     <MESSAGE value="Replacing .idea dir with a single file" />
     <MESSAGE value="Updating to use .ipr format as its more stable. Also works better with later versions" />
     <MESSAGE value="Adding treemap and infovis" />
+    <MESSAGE value="Workspace changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -868,9 +873,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/${project.name}.ipr">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="271" column="102" selection-start="15560" selection-end="15560" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="271" column="102" selection-start="15560" selection-end="15560" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../src/main/project-templates/java-basic/ide/intellij/${project.name}/${project.name}.iml">
@@ -895,6 +898,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="30" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../tool/checkstyle/checkstyle2tm3.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="26" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../../src/main/bash/gen-moose.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="13" selection-end="403" vertical-scroll-proportion="0.0">
@@ -904,35 +921,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../src/main/bash/xec.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="25" selection-start="2889" selection-end="2889" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../src/main/bash/gen-simian.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0">
+        <state line="100" column="91" selection-start="3155" selection-end="3155" vertical-scroll-proportion="-8.269231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../src/main/bash/gen-treemap.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="24" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
+        <state line="5" column="93" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../tool/checkstyle/ant/checkstyle.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="24" selection-start="1903" selection-end="1903" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../tool/checkstyle/checkstyle2tm3.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="26" selection-start="1296" selection-end="1296" vertical-scroll-proportion="1.8110883">
+        <state line="29" column="65" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.9064588">
           <folding />
         </state>
       </provider>
