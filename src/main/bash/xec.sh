@@ -14,7 +14,8 @@ function calculate.xecScriptFileName() {
     if [ -z "$LINKED_XEC_SCRIPT_FILE" ]; then
         XEC_SCRIPT_FILE=$RAW_XEC_SCRIPT_FILE
     fi
-    XEC_HOME=$(dirname $XEC_SCRIPT_FILE)    
+    export XEC_HOME=$(dirname $XEC_SCRIPT_FILE)
+    export XYLON_HOME="$XEC_HOME/../../.."
 }
 
 function init() {
@@ -27,6 +28,7 @@ function report.config() {
 	echo "Project name   : [$PROJECT_NAME]"
 	echo "Working in     : $CURRENT_DIR"
 	echo "xec home       : $XEC_HOME"
+	echo "xylon home     : $XYLON_HOME"
 	echo "xec version    : 1.0"
 	echo "Args           : $*"
 	echo "-----------------------------------------------------------------------------"
@@ -90,7 +92,7 @@ function gen.moose() {
 }
 
 function gen.simian() {
-    $XEC_HOME/gen-simian.sh $XEC_HOME/../../../lib/production   
+    $XEC_HOME/gen-simian.sh $XYLON_HOME/lib/production   
 }
 
 function gen.treemap() {
@@ -98,12 +100,17 @@ function gen.treemap() {
         PARENT_DIR=$(dirname $SRC_DIR)
         PARENT_NAME=$(basename $PARENT_DIR)
 	    echo "Generating treemap for : $PARENT_NAME : $SRC_DIR"
-	    $XEC_HOME/gen-treemap.sh $PROJECT_NAME  $XEC_HOME/../../../tool/checkstyle $SRC_DIR $PARENT_NAME
+	    $XEC_HOME/gen-treemap.sh $PROJECT_NAME  $XYLON_HOME/tool/checkstyle $SRC_DIR $PARENT_NAME
     done
 }
 
 function command.build() {
    ant -logger org.apache.tools.ant.NoBannerLogger -f build.xml
+}
+
+function command.infovis() {
+   cd target/treemap
+   java -jar $XYLON_HOME/tool/infovis-toolkit/infovis-toolkit-trunk.jar
 }
 
 

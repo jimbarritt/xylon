@@ -30,7 +30,7 @@
         <exec executable="/usr/bin/ruby" output="${outputfile.tm3}" >
             <arg value="${checkstyle.dir}/checkstyle2tm3.rb" />
             <arg value="${outputfile.xml}" />
-            <arg value="${src.main.java.dir}" />
+            <arg value="${src.dir}" />
         </exec>
 
     </target>
