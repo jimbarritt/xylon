@@ -10,5 +10,6 @@ cd /Applications/inFusion/tools/inFusion
 
 mkdir -p $TARGET_DIR
 
+#Can be famix30 or famix21
 echo "Executing: java2mse.sh $SOURCE_DIR famix21 $TARGET_FILE"
-java2mse.sh $SOURCE_DIR famix30 $TARGET_FILE
+java2mse.sh $SOURCE_DIR famix21 $TARGET_FILE
