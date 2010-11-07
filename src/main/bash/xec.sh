@@ -112,6 +112,10 @@ function gen.vizant() {
     $XEC_HOME/gen-vizant.sh $PROJECT_NAME $XYLON_HOME/tool/vizant
 }
 
+function gen.grand() {
+    $XEC_HOME/gen-grand.sh $PROJECT_NAME $XYLON_HOME/tool/grand
+}
+
 function command.build() {
    ant -logger org.apache.tools.ant.NoBannerLogger -f build.xml
 }

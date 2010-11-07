@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="grand" default="report:dot-ant">
+
+    <description>
+        Uses the visualisation tool Grand (http://www.ggtools.net/grand/) to visualise an ant file
+    </description>
+
+    <property name="project.name" value="not-set"
+              description="Project name, used to generate output file names. Pass this in, like -Dbuild.xml=build.script.to.analyze"/>
+
+    <property name="project.dir" value="not-set"
+              description="Project home directory, used to generate output file names. Pass this in, like -Dbuild.xml=build.script.to.analyze"/>
+
+    <property name="build.xml" value="not-set"
+              description="Build xml file to process, pass this in, like -Dbuild.xml=build.script.to.analyze"/>
+
+    <property name="src.build.xml" value="${build.xml}"/>
+    <property name="target.dir" value="${project.dir}/target"/>
+    <property name="target.grand.dir" value="${target.dir}/grand"/>
+    <property name="target.grand.build.dot" value="${target.grand.dir}/${project.name}-build.dot"/>
+    <property name="target.grand.build.png" value="${target.grand.dir}/${project.name}-build.png"/>
+    <property name="target.grand.build.ps" value="${target.grand.dir}/${project.name}-build.ps"/>
+
+    <taskdef resource="task.properties" classpath="../lib/grand-1.8.jar"/>
+
+    <target name="info">
+        <echo message="Visualising ant file ${src.build.xml} to ${target.grand.build.png}"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="${target.grand.dir}"/>
+        <mkdir dir="${target.grand.dir}"/>
+    </target>
+
+    <target name="report:dot-ant" depends="info, clean">
+        <echo message="Running grand on ${src.build.xml} to ${target.grand.build.png} via ${target.grand.build.dot}"/>
+        <grand buildfile="${src.build.xml}"
+               output="${target.grand.build.dot}"/>
+
+        <antcall target="generate-ps-a3"/>
+        <antcall target="preview-ps"/>
+    </target>
+
+    <target name="generate-ps-a3">
+        <echo message="Generating A3 postscript file..."/>
+        <exec executable="dot">
+            <arg line="-Tps -Gsize=16.5,11.7 -o ${target.grand.build.ps} ${target.grand.build.dot}"/>
+        </exec>
+    </target>
+
+    <target name="generate-png">
+        <echo message="Generating png ..."/>
+        <exec executable="dot">
+            <arg line="-Tps -Gsize=16.5,11.7 -o ${target.grand.build.ps} ${target.grand.build.dot}"/>
+        </exec>
+    </target>
+
+    <target name="preview-png">
+        <exec executable="open">
+            <arg line="-a Preview ${target.grand.build.png}"/>
+        </exec>
+    </target>
+
+    <target name="preview-ps">
+        <exec executable="open">
+            <arg line="-a Preview ${target.grand.build.ps}"/>
+        </exec>
+    </target>
+</project>
