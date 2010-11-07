@@ -2,23 +2,36 @@
 
 <project name="checkstyle" default="report:dot-ant">
 
+    <property name="project.name" value="not-set"
+              description="Project name, used to generate output file names. Pass this in, like -Dbuild.xml=build.script.to.analyze"/>
+
+    <property name="project.dir" value="not-set"
+              description="Project home directory, used to generate output file names. Pass this in, like -Dbuild.xml=build.script.to.analyze"/>
+
     <property name="build.xml" value="not-set"
-              description="You should set this value when you invoke ant, like -Dbuild.xml=build.script.to.analyze"/>
+              description="Build xml file to process, pass this in, like -Dbuild.xml=build.script.to.analyze"/>
 
     <property name="src.build.xml" value="${build.xml}"/>
-    <property name="target.dir" value="./target"/>
+    <property name="target.dir" value="${project.dir}/target" />
     <property name="target.vizant.dir" value="${target.dir}/vizant"/>
-    <property name="target.vizant.build.dot" value="${target.vizant.dir}/build.dot"/>
-    <property name="target.vizant.build.png" value="${target.vizant.dir}/build.png"/>
+    <property name="target.vizant.build.dot" value="${target.vizant.dir}/${project.name}-build.dot"/>
+    <property name="target.vizant.build.png" value="${target.vizant.dir}/${project.name}-build.png"/>
 
     <taskdef name="vizant" classname="net.sourceforge.vizant.Vizant" classpath="../lib/vizant-0.1.2.jar"/>
 
     <target name="info">
-        <echo message="Visualising ant file ${src.build.xml} to ${target.vizant.build.png}" />
+        <echo message="Visualising ant file ${src.build.xml} to ${target.vizant.build.png}"/>
     </target>
-    
-    <target name="report:dot-ant" depends="info">
-        <vizant antfile="${src.build.xml}" outfile="${target.vizant.build.dot}"/>
+
+    <target name="clean">
+        <delete dir="${target.vizant.dir}"/>
+        <mkdir dir="${target.vizant.dir}"/>
+    </target>
+
+    <target name="report:dot-ant" depends="info, clean">
+        <echo message="Running vizant on ${src.build.xml} to ${target.vizant.build.png} via ${target.vizant.build.dot}"/>
+        <vizant antfile="${src.build.xml}"
+                outfile="${target.vizant.build.dot}"/>
         <exec executable="dot">
             <arg line="-Tpng ${target.vizant.build.dot} -o ${target.vizant.build.png}"/>
         </exec>
