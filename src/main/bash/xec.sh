@@ -87,6 +87,10 @@ function init.java() {
 	open -a /Applications/IntelliJ\ IDEA\ 9.0.3.app/ ide/intellij/$PROJECT_NAME/$PROJECT_NAME.ipr	
 }
 
+function init.ruby() {
+    echo "Use tree surgeon @ http://github.com/riethmayer/ruby-project-template"
+}
+
 function gen.moose() {
     $XEC_HOME/gen-moose.sh $PROJECT_NAME
 }
@@ -102,6 +106,10 @@ function gen.treemap() {
 	    echo "Generating treemap for : $PARENT_NAME : $SRC_DIR"
 	    $XEC_HOME/gen-treemap.sh $PROJECT_NAME  $XYLON_HOME/tool/checkstyle $SRC_DIR $PARENT_NAME
     done
+}
+
+function gen.vizant() {
+    $XEC_HOME/gen-vizant.sh $PROJECT_NAME $XYLON_HOME/tool/vizant
 }
 
 function command.build() {
