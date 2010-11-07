@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="c3c137ee-a92a-4e84-9eb2-c5bf936adcb0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" afterPath="$PROJECT_DIR$/../../../src/main/bash/xec.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../src/main/bash/gen-grand.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/grand/ant/grand.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../tool/grand/lib/grand-1.8.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$USER_HOME_GRAILS$/" />
@@ -87,7 +85,7 @@
       <file leaf-file-name="grand.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../tool/grand/ant/grand.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="15" selection-start="2006" selection-end="2206" vertical-scroll-proportion="0.2830482">
+            <state line="47" column="15" selection-start="2104" selection-end="2104" vertical-scroll-proportion="0.24261275">
               <folding />
             </state>
           </provider>
@@ -781,10 +779,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13027744" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13027744" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946082" sideWeight="0.6621118" order="1" side_tool="false" content_ui="tabs" />
@@ -829,7 +827,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding vizant and making it work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding grand ant visualisation" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -866,6 +864,7 @@
     <MESSAGE value="Got it to work proper gens treemaps in nice organisation" />
     <MESSAGE value="Fixing bug with gen moose" />
     <MESSAGE value="Adding vizant and making it work" />
+    <MESSAGE value="Adding grand ant visualisation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -966,7 +965,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../tool/grand/ant/grand.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="15" selection-start="2006" selection-end="2206" vertical-scroll-proportion="0.2830482">
+        <state line="47" column="15" selection-start="2104" selection-end="2104" vertical-scroll-proportion="0.24261275">
           <folding />
         </state>
       </provider>
