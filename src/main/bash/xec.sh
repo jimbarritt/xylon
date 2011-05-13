@@ -99,6 +99,9 @@ function gen.simian() {
     $XEC_HOME/gen-simian.sh $XYLON_HOME/lib/production   
 }
 
+function gen.cloc() {
+    $XEC_HOME/gen-cloc.sh $XYLON_HOME/tool/cloc $*
+}
 function gen.treemap() {
     for SRC_DIR in $(find $CURRENT_DIR/src -name java); do
         PARENT_DIR=$(dirname $SRC_DIR)
