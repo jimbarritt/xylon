@@ -92,7 +92,7 @@ function init.ruby() {
 }
 
 function gen.moose() {
-    $XEC_HOME/gen-moose.sh $PROJECT_NAME
+    $XEC_HOME/gen-moose.sh $PROJECT_NAME $*
 }
 
 function gen.simian() {
