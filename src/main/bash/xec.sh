@@ -99,6 +99,12 @@ function gen.simian() {
     $XEC_HOME/gen-simian.sh $XYLON_HOME/lib/production   
 }
 
+function gen.latex() {
+    mkdir -p target/latex
+    pdflatex -output-directory target/latex *.tex
+    open target/latex/*.pdf
+}
+
 function gen.cloc() {
     $XEC_HOME/gen-cloc.sh $XYLON_HOME/tool/cloc $*
 }
