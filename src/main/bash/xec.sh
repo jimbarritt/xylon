@@ -10,7 +10,7 @@ ANT_PATH=$(which ant)
 function calculate.xecScriptFileName() {
     local RAW_XEC_SCRIPT_FILE=$0
     local LINKED_XEC_SCRIPT_FILE=$(readlink $RAW_XEC_SCRIPT_FILE)
-    XEC_SCRIPT_FILE=$LINKED_XEC_SCRIPT_FILE    
+    XEC_SCRIPT_FILE=$LINKED_XEC_SCRIPT_FILE
     if [ -z "$LINKED_XEC_SCRIPT_FILE" ]; then
         XEC_SCRIPT_FILE=$RAW_XEC_SCRIPT_FILE
     fi
@@ -34,7 +34,7 @@ function report.config() {
 	echo "-----------------------------------------------------------------------------"
 	#echo Using ant from [$ANT_PATH] in directory [$PWD] with command [$1]
 
-	#ant -f ./build.xml -Dbasedir=$PWD -Dproject.name=$PROJECT_NAME $@	
+	#ant -f ./build.xml -Dbasedir=$PWD -Dproject.name=$PROJECT_NAME $@
 }
 
 function report.completed() {
@@ -51,20 +51,20 @@ function command.help() {
 	echo "Usage: xec <command> args"
 }
 
-function command.gen() {    
+function command.gen() {
     local GEN_COMMAND=$1
     shift
     local ARGUMENTS=$*
 
-    executeCommandFunction "gen $GEN_COMMAND" "gen.$GEN_COMMAND" $ARGUMENTS    
+    executeCommandFunction "gen $GEN_COMMAND" "gen.$GEN_COMMAND" $ARGUMENTS
 }
 
-function command.init() {    
+function command.init() {
     local GEN_COMMAND=$1
     shift
     local ARGUMENTS=$*
 
-    executeCommandFunction "init $GEN_COMMAND" "init.$GEN_COMMAND" $ARGUMENTS    
+    executeCommandFunction "init $GEN_COMMAND" "init.$GEN_COMMAND" $ARGUMENTS
 }
 
 
@@ -84,7 +84,19 @@ function init.java() {
 
 	rm "./ide/intellij/$PROJECT_NAME/$PROJECT_NAME.ipr.bak"
 
-	open -a /Applications/IntelliJ\ IDEA\ 9.0.3.app/ ide/intellij/$PROJECT_NAME/$PROJECT_NAME.ipr	
+	open -a /Applications/IntelliJ\ IDEA\ 9.0.3.app/ ide/intellij/$PROJECT_NAME/$PROJECT_NAME.ipr
+}
+
+function init.mvn() {
+    echo -e "\nInitialising a maven project in $CURRENT_DIR ..."
+
+    local GROUP_ID=$1
+    local ARTIFACT_ID=$2
+    local MVN_COMMAND="mvn archetype:create -DgroupId=$GROUP_ID -DartifactId=$ARTIFACT_ID"
+
+    echo -e "\n$MVN_COMMAND"
+    $MVN_COMMAND
+
 }
 
 function init.ruby() {
@@ -96,7 +108,7 @@ function gen.moose() {
 }
 
 function gen.simian() {
-    $XEC_HOME/gen-simian.sh $XYLON_HOME/lib/production   
+    $XEC_HOME/gen-simian.sh $XYLON_HOME/lib/production
 }
 
 function gen.latex() {
